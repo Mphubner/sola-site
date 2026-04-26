@@ -113,7 +113,7 @@
     .preloader{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;background:linear-gradient(145deg,#100402,#3c1c15);transition:opacity .6s var(--ease),visibility .6s var(--ease)}.preloader.is-done{opacity:0;visibility:hidden;pointer-events:none}.preloader-inner{text-align:center}.preloader .symbol{width:72px;animation:preloaderPulse 1.6s var(--ease) infinite}@keyframes preloaderPulse{0%,100%{opacity:.4;transform:scale(.95)}50%{opacity:1;transform:scale(1.05)}}.preloader-bar{width:120px;height:2px;margin:1.5rem auto 0;border-radius:2px;background:rgba(236,220,192,.15);overflow:hidden}.preloader-bar span{display:block;width:0;height:100%;background:linear-gradient(90deg,var(--gold),var(--sand));border-radius:2px;animation:preloaderBar 1.8s var(--ease) forwards}@keyframes preloaderBar{to{width:100%}}
 
     /* ── HERO CAROUSEL ── */
-    .hero-carousel{position:relative;overflow:hidden}.hero-slides{display:flex;transition:transform .7s var(--ease);will-change:transform}.hero-slide{min-width:100%;position:relative}
+    .hero-carousel{position:relative;overflow:hidden;width:100%}.hero-slides{display:flex;width:100%;transition:transform .7s var(--ease);will-change:transform}.hero-slide{min-width:100%;width:100%;position:relative;flex-shrink:0}
     .carousel-dots{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:10}.carousel-dot{width:10px;height:10px;border-radius:50%;border:1.5px solid rgba(236,220,192,.5);background:transparent;cursor:pointer;transition:background .3s var(--ease),transform .3s var(--ease);padding:0}.carousel-dot.active{background:var(--gold);transform:scale(1.25)}
     .carousel-arrows{position:absolute;top:50%;width:100%;display:flex;justify-content:space-between;padding:0 16px;transform:translateY(-50%);z-index:10;pointer-events:none}.carousel-arrow{width:44px;height:44px;border-radius:50%;border:1px solid rgba(236,220,192,.2);background:rgba(18,6,4,.5);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);color:var(--sand);display:grid;place-items:center;cursor:pointer;pointer-events:auto;transition:background .3s var(--ease),transform .2s var(--spring),border-color .3s var(--ease)}.carousel-arrow:hover{background:rgba(18,6,4,.8);border-color:rgba(221,145,74,.5);transform:scale(1.08)}.carousel-arrow svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
@@ -297,7 +297,9 @@
         <button class="carousel-dot" data-slide="1" aria-label="Slide 2"></button>
         <button class="carousel-dot" data-slide="2" aria-label="Slide 3"></button>
       </div>
-      <div class="metrics"><div class="metric"><b>72h</b><span>janela do drop</span></div><div class="metric"><b>10</b><span>peças sob encomenda</span></div><div class="metric"><b>30d</b><span>tempo de forja</span></div></div>
+      <div class="container" style="position:relative;z-index:10;width:100%;">
+        <div class="metrics"><div class="metric"><b>72h</b><span>janela do drop</span></div><div class="metric"><b>10</b><span>peças sob encomenda</span></div><div class="metric"><b>30d</b><span>tempo de forja</span></div></div>
+      </div>
     </section>
 
     <section class="brand-section section" id="marca" aria-labelledby="brandTitle">
